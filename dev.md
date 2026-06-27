@@ -1,5 +1,47 @@
 # PowerShell profile commands
 
+## 📋 PowerShell Profile State
+
+This profile requires the following 3rd party tools to be installed for full functionality:
+
+| Tool | Required | Purpose |
+|---|---|---|
+| **oh-my-posh** | Optional* | Customizable prompt theme with git integration |
+| **zoxide** | Optional* | Smart directory jumper for quick navigation |
+| **Terminal-Icons** | Optional* | File/folder icons in directory listings |
+
+*Note: The profile will work without these tools, but will display warnings if they're not installed. Installation is recommended for optimal experience.
+
+---
+
+## 🚀 Installation Commands
+
+### Individual Installation
+
+#### oh-my-posh
+```powershell
+winget install JanDeDobbeleer.OhMyPosh
+```
+
+#### zoxide
+```powershell
+winget install ajeetdsouza.zoxide
+```
+
+#### Terminal-Icons
+```powershell
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+### Batch Installation via Scoop
+```powershell
+scoop install oh-my-posh zoxide && Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+*Note: Requires Scoop to be installed. Install Scoop with: `iwr -useb get.scoop.sh | iex`*
+
+---
+
 This file documents the command groups and descriptions implemented in Microsoft.PowerShell_profile.ps1.
 
 | Group | Description | Command |
