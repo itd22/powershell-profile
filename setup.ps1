@@ -13,6 +13,5 @@ Invoke-WebRequest -Uri https://github.com/JanDeDobbeleer/oh-my-posh/raw/main/the
 
 attrib +h $Home\cobalt2.omp.json
 
-
-winget install JanDeDobbeleer.OhMyPosh ajeetdsouza.zoxide DEVCOM.JetBrainsMonoNerdFont --source winget --silent
+scoop install oh-my-posh zoxide JetBrainsMono-NF
 Write-Host "Successfully Installed CTT PowerShell Profile." -ForegroundColor Green
