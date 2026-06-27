@@ -41,10 +41,6 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+z' -Function Undo
 Set-PSReadLineKeyHandler -Chord 'Ctrl+y' -Function Redo
 
 # Functions
-function Update-Profile {
-    Invoke-WebRequest -Uri https://github.com/ChrisTitusTech/powershell-profile/raw/main/Microsoft.PowerShell_profile.ps1 -OutFile $Profile
-    Write-Host "Updated PowerShell Profile" -ForegroundColor Green
-}
 
 # File / Directory Utilities
 function touch ($File) {
@@ -101,13 +97,6 @@ function uptime {
     (Get-Date) - (Get-CimInstance -ClassName Win32_OperatingSystem).LastBootUpTime | Select-Object Days, Hours, Minutes, Seconds
 }
 
-function winutil {
-    Invoke-RestMethod https://christitus.com/win | Invoke-Expression
-}
-
-function winutildev {
-    Invoke-RestMethod https://christitus.com/windev | Invoke-Expression
-}
 
 # Git Shortcuts
 function gs { git status }
@@ -160,8 +149,6 @@ function Show-Help {
 ${title}󰘳 PowerShell Profile Help${reset}
 ${dim}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${reset}
 
-${section}󰊢 Update${reset}
-  ${command}Update-Profile${reset}  ${accent}→${reset} ${desc}Updates the profile from a remote repository.${reset}
 
 ${section}󰊢 Git Shortcuts${reset}
 ${dim}────────────────────────────────────────────────────${reset}
@@ -190,8 +177,6 @@ ${dim}────────────────────────�
   ${command}unzip <file>${reset}       ${accent}→${reset} ${desc}Extract zip${reset}
   ${command}uptime${reset}             ${accent}→${reset} ${desc}System uptime${reset}
   ${command}which <name>${reset}       ${accent}→${reset} ${desc}Locate command${reset}
-  ${command}winutil${reset}            ${accent}→${reset} ${desc}Run WinUtil${reset}
-  ${command}winutildev${reset}         ${accent}→${reset} ${desc}Run WinUtil Dev${reset}
 
 ${dim}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${reset}
 "@
