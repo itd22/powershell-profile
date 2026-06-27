@@ -2,16 +2,35 @@
 
 This file documents the command groups and descriptions implemented in Microsoft.PowerShell_profile.ps1.
 
-| Group | Command | Description of the user commands implemented in this file |
+| Group | Command | Description |
 |---|---|---|
-| Update | `Update-Profile` | Downloads the remote profile from the repo and writes it to the current `$Profile` (updates local profile). |
-| History & Colors | `Set-PSReadLineOption` | Configures syntax colors and prediction view style for PSReadLine with custom color map. |
-| KeyBinds | `Set-PSReadLineKeyHandler` | Binds keys (Up/Down/Tab, Ctrl+d/w/Left/Right/z/y, Alt+d) to history search, completion, delete, word movement, undo/redo, etc. |
-| File / Directory Utilities | `touch`, `mkcd`, `trash`, `ff` | `touch` — create file or update LastWriteTime; `mkcd` — create directory and change into it; `trash` — send file/dir to Recycle Bin; `ff` — recursive filename search. |
-| Process Utilities | `pgrep`, `pkill`, `k9` | `pgrep` — get processes by name; `pkill` — stop processes by name (Force); `k9` — shorthand that calls `pkill`. |
-| System Utilities | `uptime`, `winutil`, `winutildev` | `uptime` — show system uptime (days/hours/minutes/seconds); `winutil` & `winutildev` — fetch and invoke remote helper scripts from christitus.com. |
-| Git Shortcuts | `gs`, `ga`, `gp`, `gpush`, `gpull`, `gcl`, `g`, `gcom`, `lazyg` | Shortcuts for `git status`, `git add .`, `git push`, `git pull`, `git clone`, zoxide-based GitHub directory change, and lazy git. |
-| Listing / Viewing | `la`, `ll` | `la` — list items (formatted), `ll` — list including hidden (formatted). |
-| Aliases | `unzip`, `grep` | `unzip` -> `Expand-Archive`; `grep` -> `Select-String` (aliases for common commands). |
+| Aliases | `grep` | Alias for `Select-String` (common command). |
+| Aliases | `unzip` | Alias for `Expand-Archive` (common command). |
+| File / Directory Utilities | `ff` | Recursive filename search. |
+| File / Directory Utilities | `mkcd` | Create directory and change into it. |
+| File / Directory Utilities | `touch` | Create file or update LastWriteTime. |
+| File / Directory Utilities | `trash` | Send file/dir to Recycle Bin. |
+| Git Shortcuts | `g` | Zoxide-based GitHub directory change. |
+| Git Shortcuts | `ga` | Shortcut for `git add .`. |
+| Git Shortcuts | `gcl` | Shortcut for `git clone`. |
+| Git Shortcuts | `gcom` | Git commit shortcut. |
+| Git Shortcuts | `gp` | Shortcut for `git push`. |
+| Git Shortcuts | `gpull` | Shortcut for `git pull`. |
+| Git Shortcuts | `gpush` | Shortcut for `git push`. |
+| Git Shortcuts | `gs` | Shortcut for `git status`. |
+| Git Shortcuts | `lazyg` | Lazy git shortcut. |
 | Help Function | `Show-Help` | Prints a colorized help block that documents the available commands/shortcuts in the profile. |
-| Initialization / Third-party integration | `Terminal-Icons`, `oh-my-posh`, `zoxide` | Imports `Terminal-Icons` if available; checks for `oh-my-posh` and a theme path then initializes `oh-my-posh` if present; checks for `zoxide` and initializes if found. |
+| History & Colors | `Set-PSReadLineOption` | Configures syntax colors and prediction view style for PSReadLine with custom color map. |
+| Initialization / Third-party integration | `oh-my-posh` | Initializes oh-my-posh if present with theme path. |
+| Initialization / Third-party integration | `Terminal-Icons` | Imports Terminal-Icons if available. |
+| Initialization / Third-party integration | `zoxide` | Initializes zoxide if found. |
+| KeyBinds | `Set-PSReadLineKeyHandler` | Binds keys (Up/Down/Tab, Ctrl+d/w/Left/Right/z/y, Alt+d) to history search, completion, delete, word movement, undo/redo, etc. |
+| Listing / Viewing | `la` | List items (formatted). |
+| Listing / Viewing | `ll` | List including hidden items (formatted). |
+| Process Utilities | `k9` | Shorthand that calls `pkill`. |
+| Process Utilities | `pgrep` | Get processes by name. |
+| Process Utilities | `pkill` | Stop processes by name (Force). |
+| System Utilities | `uptime` | Show system uptime (days/hours/minutes/seconds). |
+| System Utilities | `winutil` | Fetch and invoke remote helper scripts from christitus.com. |
+| System Utilities | `winutildev` | Fetch and invoke remote developer helper scripts from christitus.com. |
+| Update | `Update-Profile` | Downloads the remote profile from the repo and writes it to the current `$Profile` (updates local profile). |
