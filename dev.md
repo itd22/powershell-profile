@@ -18,7 +18,7 @@ This file documents the command groups and descriptions implemented in Microsoft
 | | Shortcut for `git push`. | `gp` |
 | | Shortcut for `git push`. | `gpush` |
 | | Shortcut for `git status`. | `gs` |
-| | Zoxide-based GitHub directory change. | `g` |
+| | Zoxide-based GitHub directory change. Quickly navigate to GitHub folder without typing full paths. | `g` |
 | Help Function | Prints a colorized help block that documents the available commands/shortcuts in the profile. | `Show-Help` |
 | History & Colors | Configures syntax colors and prediction view style for PSReadLine with custom color map. | `Set-PSReadLineOption` |
 | Initialization / Third-party integration | Imports Terminal-Icons if available. | `Terminal-Icons` |
