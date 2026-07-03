@@ -1,0 +1,9 @@
+NuGet provider is required to continue
+PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
+ provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+'C:\Users\itamar\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by
+running 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install
+and import the NuGet provider now?
+
+
+
